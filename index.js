@@ -62,7 +62,7 @@ async function runAutomationLoop() {
   }
 }
 
-cron.schedule('*/15 * * * *', () => {
+cron.schedule('*/5 * * * *', () => {
   runAutomationLoop();
 });
 
