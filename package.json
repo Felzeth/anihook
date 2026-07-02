@@ -1,0 +1,25 @@
+{
+  "name": "anime-dub-webhook",
+  "version": "1.0.0",
+  "description": "Monitor Crunchyroll simulcast calendar for new dubbed anime releases and post them to a Discord webhook.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js --test",
+    "check": "node --check index.js && node --check scraper.js && node --check config/discordEmbed.js"
+  },
+  "keywords": [
+    "anime",
+    "discord",
+    "webhook",
+    "crunchyroll"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.4",
+    "cheerio": "^1.1.0",
+    "dotenv": "^16.4.0",
+    "node-cron": "^4.5.0"
+  }
+}
