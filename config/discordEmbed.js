@@ -8,7 +8,15 @@
  * @returns {Object} Complete Discord webhook payload.
  */
 function createDubEmbed(anime) {
+  const releaseTypeLabel = anime.releaseType && anime.releaseType !== 'Unknown'
+    ? anime.releaseType
+    : (anime.language && anime.language !== 'Unknown' ? 'Dub' : 'Release');
+  const audioLabel = anime.language && anime.language !== 'Unknown'
+    ? `${anime.language} ${releaseTypeLabel}`
+    : releaseTypeLabel;
+
   return {
+    //content: `you can add this to the message if you want to ping a role or user.`,
     embeds: [
       {
         title: anime.title,
@@ -22,7 +30,7 @@ function createDubEmbed(anime) {
         fields: [
           {
             name: '🔊 Audio Track',
-            value: `\`${anime.language} Dub\``,
+            value: `\`${audioLabel}\``,
             inline: true
           },
           {
