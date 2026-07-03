@@ -20,7 +20,8 @@ A simple Node.js bot that monitors Crunchyroll's simulcast calendar and posts ne
 ## Installation
 
 ```bash
-cd "Downloads\anihook"
+git clone https://github.com/felzeth/anihook
+cd anihook
 npm install
 ```
 
