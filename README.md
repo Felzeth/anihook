@@ -1,4 +1,4 @@
-# Crunchyroll Release Tracker
+# Crunchyroll Release Tracker / Anihook
 
 A simple Node.js bot that monitors Crunchyroll's simulcast calendar and posts new dub release announcements to a Discord webhook.
 
@@ -91,7 +91,3 @@ npm run test
 - Authenticated scraping is required because Crunchyroll may hide calendar content when not logged in
 - The bot now infers dub content from titles like `(Português)` and `(English)` and maps them to dub announcements
 - If a release is blocked by `languageExcludes`, it will not be announced
-
-## License
-
-MIT
