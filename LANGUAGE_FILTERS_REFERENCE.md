@@ -114,21 +114,21 @@ The `"language"` field shows the **exact string** to use in your filters!
 
 ## Example Configurations
 
-### Only English Dubs (From Your History)
+### Only English Dubs
 
 ```javascript
 languageIncludes: ["english-dub"];
 languageExcludes: [];
 ```
 
-### Only Thai Dubs (From Your History)
+### Only Thai Dubs
 
 ```javascript
 languageIncludes: ["ไทย-dub"];
 languageExcludes: [];
 ```
 
-### Both Thai & English Dubs (From Your History)
+### Both Thai & English Dubs
 
 ```javascript
 languageIncludes: ["ไทย-dub", "english-dub"];
