@@ -67,9 +67,11 @@ Start the bot:
 
 ```bash
 npm start
+```
 
-#or using
+or
 
+```bash
 node index.js
 ```
 
